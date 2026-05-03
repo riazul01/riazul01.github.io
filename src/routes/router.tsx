@@ -1,6 +1,8 @@
 import MainLayout from "layouts/main-layout";
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, Outlet } from "react-router";
+import Splash from "components/loader/Splash";
+import PageLoader from "components/loader/PageLoader";
 
 const App = lazy(() => import("App"));
 const Home = lazy(() => import("pages/Home"));
@@ -8,7 +10,7 @@ const Home = lazy(() => import("pages/Home"));
 const router = createBrowserRouter([
   {
     element: (
-      <Suspense fallback={<h3>Loading...</h3>}>
+      <Suspense fallback={<Splash />}>
         <App />
       </Suspense>
     ),
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <Suspense fallback={<h3>Loading...</h3>}>
+          <Suspense fallback={<PageLoader />}>
             <MainLayout>
               <Outlet />
             </MainLayout>
