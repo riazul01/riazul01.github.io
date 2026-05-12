@@ -1,4 +1,5 @@
 import type { Theme, Components } from "@mui/material/styles";
+import keyframes from "./styles/keyframes";
 
 const CssBaseline: Components<Theme>["MuiCssBaseline"] = {
   defaultProps: {},
@@ -13,6 +14,7 @@ const CssBaseline: Components<Theme>["MuiCssBaseline"] = {
     body: {
       backgroundColor: theme.palette.background.default,
     },
+    ...keyframes(),
   }),
 };
 

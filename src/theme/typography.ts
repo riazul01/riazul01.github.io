@@ -50,6 +50,12 @@ const typography: TypographyVariantsOptions = {
     fontSize: "0.75rem", // 12px
     fontWeight: 400,
   },
+  overline: {
+    fontSize: "0.7rem", // 11.2px
+    lineHeight: 2.25,
+    letterSpacing: 1.5,
+    fontWeight: 600,
+  },
 };
 
 export default typography;

@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import DarkVeil from "components/animations/DarkVeil";
+import CurrentStatus from "components/common/CurrentStatus";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         overflow: "hidden",
       }}
     >
-      <div style={{ width: "100%", height: "80%", position: "absolute" }}>
+      <Box sx={{ width: 1, height: "80%", position: "absolute" }}>
         <DarkVeil
           hueShift={0}
           noiseIntensity={0}
@@ -23,7 +24,8 @@ const Home = () => {
           scanlineFrequency={0}
           warpAmount={0}
         />
-      </div>
+      </Box>
+
       <Stack
         direction="column"
         sx={{
@@ -38,42 +40,50 @@ const Home = () => {
           transform: "translate(-50%, -50%)",
         }}
       >
-        <div>
-          <Typography
-            variant="h1"
-            sx={{
-              mb: 3,
-              textAlign: "center",
-              fontSize: "4rem",
-              fontWeight: 700,
-              background: (theme) =>
-                `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Creating Inovative <br /> Digital Experiences
-          </Typography>
+        <Typography
+          variant="h1"
+          sx={{
+            my: 3,
+            textAlign: "center",
+            fontSize: "4rem",
+            fontWeight: 700,
+            background: (theme) =>
+              `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Creating Inovative <br /> Digital Experiences
+        </Typography>
 
-          <Typography
-            variant="subtitle2"
-            sx={{ pb: 5, textAlign: "center", maxWidth: 650, fontWeight: 500 }}
-          >
-            A Full Stack Web Developer, Backed by proven technical expertise and
-            creativity to develop impactful tools that enhance business and
-            usability.
-          </Typography>
+        <Typography
+          variant="subtitle2"
+          sx={{ pb: 5, textAlign: "center", maxWidth: 650, fontWeight: 500 }}
+        >
+          A Full Stack Web Developer, Backed by proven technical expertise and
+          creativity to develop impactful tools that enhance business and
+          usability.
+        </Typography>
 
-          <Stack sx={{ gap: 1.5, justifyContent: "center" }}>
-            <Button variant="contained" color="primary">
-              Explore My Work
-            </Button>
-            <Button variant="contained" color="contrast">
-              Let’s Collaborate
-            </Button>
-          </Stack>
-        </div>
+        <Stack sx={{ gap: 1.5, justifyContent: "center" }}>
+          <Button variant="contained" color="primary">
+            Explore My Work
+          </Button>
+          <Button variant="contained" color="contrast">
+            Let’s Collaborate
+          </Button>
+        </Stack>
       </Stack>
+
+      <CurrentStatus
+        title="Available"
+        sx={{
+          position: "absolute",
+          bottom: "2rem",
+          right: "2rem",
+          cursor: "pointer",
+        }}
+      />
     </Box>
   );
 };
