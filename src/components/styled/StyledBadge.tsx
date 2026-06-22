@@ -5,7 +5,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   [`& .${badgeClasses.badge}`]: {
     color: theme.palette.success.main,
     backgroundColor: theme.palette.success.main,
-    boxShadow: `0 0 0 1.5px ${theme.palette.common.white}`,
+    boxShadow: `0 0 0 3px ${theme.palette.background.default}`,
     borderRadius: "50%",
     "&::after": {
       position: "absolute",
@@ -15,7 +15,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
       height: "100%",
       borderRadius: "50%",
       animation: "ripple 1.2s infinite ease-in-out",
-      border: "1px solid currentColor",
+      border: "2px solid currentColor",
       content: '""',
     },
   },

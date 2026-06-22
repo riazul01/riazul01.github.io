@@ -7,6 +7,7 @@ import Tabs from "./components/tab/Tabs";
 import Tab from "./components/tab/Tab";
 import Button from "./components/button/Button";
 import ButtonBase from "./components/button/ButtonBase";
+import IconButton from "./components/button/IconButton";
 
 export const theme = createTheme({
   typography,
@@ -15,6 +16,7 @@ export const theme = createTheme({
     MuiStack: Stack,
     MuiButton: Button,
     MuiButtonBase: ButtonBase,
+    MuiIconButton: IconButton,
     MuiTabs: Tabs,
     MuiTab: Tab,
     MuiCssBaseline: CssBaseline,
