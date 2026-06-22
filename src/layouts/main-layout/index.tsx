@@ -5,6 +5,7 @@ import { useEditorContext } from "providers/EditorProvider";
 import Iconify from "components/base/Iconify";
 import SidePanel from "./side-panel";
 import { files } from "data/files";
+import About from "pages/About";
 
 const MainLayout = ({ children }: PropsWithChildren) => {
   const { openFiles, activeFile, handleSetActiveFile, handleSetOpenFiles } =
@@ -95,7 +96,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                         <IconButton
                           size="small"
                           onClick={(e) => closeFile(e, fileName)}
-                          sx={{ p: 0, ml: "auto" }}
+                          sx={{ p: 0, ml: "auto", border: 0 }}
                         >
                           <Iconify
                             icon="ph:x-bold"
@@ -150,7 +151,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                   transition={{ duration: 0.15 }}
                 >
                   {activeFile === "Home.tsx" && <>{children}</>}
-                  {activeFile === "About.md" && <h1>About</h1>}
+                  {activeFile === "About.md" && <About />}
                   {activeFile === "Projects.json" && <h1>Projects</h1>}
                   {activeFile === "Contact.sh" && <h1>Contact</h1>}
                 </motion.div>
