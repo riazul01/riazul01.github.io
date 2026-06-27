@@ -11,6 +11,7 @@ import SectionWrapper from "components/sections/SectionWrapper";
 import Iconify from "components/base/Iconify";
 import ProfileBg from "assets/images/profile-bg.webp";
 import ProfileImg from "assets/images/profile.webp";
+import { Link } from "@mui/material";
 
 const Profile = () => {
   return (
@@ -89,11 +90,11 @@ const Profile = () => {
             </div>
 
             <Stack spacing={1.5} sx={{ ml: "auto", alignItems: "center" }}>
-              <IconButton>
+              <IconButton component={Link} href="https://github.com/riazul01" target="_blank">
                 <Iconify icon="mdi:github" />
               </IconButton>
 
-              <IconButton>
+              <IconButton component={Link} href="https://www.linkedin.com/in/riazul-islam-86653321b/" target="_blank">
                 <Iconify icon="mdi:linkedin" />
               </IconButton>
 

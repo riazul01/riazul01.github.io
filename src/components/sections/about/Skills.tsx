@@ -61,7 +61,13 @@ const Skills = () => {
                   },
                 })}
               >
-                <Iconify icon={skill.icon} sx={{ fontSize: 18 }} />
+                <Iconify
+                  icon={skill.icon}
+                  sx={{
+                    fontSize: 18,
+                    filter: skill.invert ? "invert(100%)" : "unset",
+                  }}
+                />
                 <Typography
                   variant="body2"
                   sx={(theme) => ({

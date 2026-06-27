@@ -9,9 +9,9 @@ const About = () => {
   return (
     <>
       <Header />
-      <Skills />
-      <Experience />
       <Projects />
+      <Experience />
+      <Skills />
       <GetInTouch />
       <Footer />
     </>

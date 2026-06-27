@@ -34,7 +34,7 @@ const Experience = () => {
                   top: 40,
                 }}
               >
-                <Iconify icon="guidance:calendar" />
+                <Iconify icon="eva:calendar-outline" />
                 <Typography
                   variant="body2"
                   sx={{
@@ -122,7 +122,7 @@ const Experience = () => {
                     alignItems: "baseline",
                     mb: exp.responsibilities.length - 1 !== index ? 2 : 3,
                   }}
-                  key={item}
+                  key={item?.toString()}
                 >
                   <Iconify
                     icon="boxicons:finger-right"
@@ -132,16 +132,8 @@ const Experience = () => {
                       flexShrink: 0,
                     }}
                   />
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "text.secondary",
-                      textAlign: "justify",
-                      lineHeight: 1.75,
-                    }}
-                  >
-                    {item}
-                  </Typography>
+
+                  {item}
                 </Stack>
               ))}
 

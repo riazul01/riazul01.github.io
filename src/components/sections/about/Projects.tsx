@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <SectionWrapper>
       <ProjectSlider
-        title="Selected Work"
+        title="Latest Work"
         SliderCard={ProjectCard}
         data={PROJECTS}
       />

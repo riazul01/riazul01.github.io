@@ -106,7 +106,7 @@ const palette: PaletteOptions = {
   },
   text: {
     primary: white[100],
-    secondary: grey[400],
+    secondary: grey[200],
     disabled: grey[600],
   },
 };
