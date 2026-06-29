@@ -1,5 +1,8 @@
 import type { PropsWithChildren, MouseEvent } from "react";
-import { Box, Typography, IconButton, Stack } from "@mui/material";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
 import { motion, AnimatePresence, Reorder } from "framer-motion";
 import { useEditorContext } from "providers/EditorProvider";
 import Iconify from "components/base/Iconify";
@@ -23,7 +26,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
   };
 
   return (
-    <Stack direction="column" sx={{ height: "100vh", width: "100vw" }}>
+    <Stack direction="column" sx={{ height: "100vh", width: 1 }}>
       <Stack
         sx={(theme) => ({
           height: 1,
@@ -83,6 +86,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                           sx={{ fontSize: 14 }}
                         />
                         <Typography
+                          variant="subtitle2"
                           sx={{
                             fontSize: "0.7rem",
                             color:
@@ -125,6 +129,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                 })}
               >
                 <Typography
+                  variant="subtitle2"
                   sx={{ color: "text.secondary", fontSize: "0.65rem" }}
                 >
                   Portfolio
@@ -133,7 +138,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                   icon="codicon:chevron-right"
                   sx={{ color: "text.secondary", fontSize: 12 }}
                 />
-                <Typography sx={{ fontSize: "0.65rem" }}>
+                <Typography variant="subtitle2" sx={{ fontSize: "0.65rem" }}>
                   {activeFile || "empty"}
                 </Typography>
               </Stack>
@@ -187,16 +192,28 @@ const MainLayout = ({ children }: PropsWithChildren) => {
             main*
           </Typography>
         </Stack>
-        <Typography sx={{ fontSize: "0.65rem" }}>1M Errors</Typography>
-        <Typography sx={{ ml: "auto", fontSize: "0.65rem" }}>UTF-8</Typography>
-        <Typography sx={{ fontSize: "0.65rem" }}>TypeScript JSX</Typography>
+        <Typography variant="subtitle2" sx={{ fontSize: "0.65rem" }}>
+          1M Errors
+        </Typography>
         <Typography
+          variant="subtitle2"
+          sx={{ ml: "auto", fontSize: "0.65rem" }}
+        >
+          UTF-8
+        </Typography>
+        <Typography variant="subtitle2" sx={{ fontSize: "0.65rem" }}>
+          TypeScript JSX
+        </Typography>
+        <Typography
+          variant="subtitle2"
           sx={{ fontSize: "0.65rem", cursor: "pointer" }}
           onClick={() => window.location.reload()}
         >
           Reload
         </Typography>
-        <Typography sx={{ fontSize: "0.65rem" }}>V 1.0</Typography>
+        <Typography variant="subtitle2" sx={{ fontSize: "0.65rem" }}>
+          V 1.0
+        </Typography>
       </Stack>
     </Stack>
   );

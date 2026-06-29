@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
 import type { Swiper as SwiperClass } from "swiper";
 import { SwiperSlide } from "swiper/react";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import useResizeObserver from "hooks/useResizeObserver";
 import ReactSwiper from "components/base/ReactSwiper";
 import Iconify from "components/base/Iconify";
-import useResizeObserver from "hooks/useResizeObserver";
-import IconButton from "@mui/material/IconButton";
 
 interface HasId {
   id: string | number;

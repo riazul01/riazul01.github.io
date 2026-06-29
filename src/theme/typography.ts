@@ -35,7 +35,7 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 500,
   },
   subtitle2: {
-    fontSize: "1rem", // 16px
+    fontSize: "1.05rem", // 16.8px
     fontWeight: 500,
   },
   body1: {

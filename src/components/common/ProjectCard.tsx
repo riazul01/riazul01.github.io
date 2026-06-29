@@ -1,15 +1,14 @@
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
-import type { Project } from "data/about";
+import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import type { Project } from "data/about";
 
 interface ProjectCardProps {
   data: Project;
 }
 
 const ProjectCard = ({ data }: ProjectCardProps) => {
-  console.log(data);
   return (
     <Box
       sx={{
@@ -30,7 +29,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
           <CardMedia
             component="img"
             image={data.image}
-            alt="Project dashboard sneak peek"
+            alt="project_image"
             sx={{
               width: 1,
               height: 280,

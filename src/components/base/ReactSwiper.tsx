@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
 import { Box, type BoxProps } from "@mui/material";
 import { Swiper, type SwiperProps } from "swiper/react";
-import type { Swiper as SwiperClass } from "swiper";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { type Swiper as SwiperClass } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css";
 

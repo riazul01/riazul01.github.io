@@ -1,13 +1,11 @@
 import Stack from "@mui/material/Stack";
-import Divider from "@mui/material/Divider";
 import Typography, { typographyClasses } from "@mui/material/Typography";
-import SectionWrapper from "components/sections/SectionWrapper";
 import Iconify from "components/base/Iconify";
 import { SKILLS_DATA } from "data/about";
 
 const Skills = () => {
   return (
-    <SectionWrapper>
+    <>
       <Typography variant="h4" sx={{ mb: 4 }}>
         Skills
       </Typography>
@@ -44,17 +42,15 @@ const Skills = () => {
                   borderColor: "divider",
                   bgcolor: "background.paper",
                   alignItems: "center",
-                  boxShadow: "0px 1px 2px rgba(0,0,0,0.05)",
+                  cursor: "default",
                   transition: theme.transitions.create("all", {
                     duration: 200,
                     easing: theme.transitions.easing.easeInOut,
                   }),
-                  cursor: "default",
                   "&:hover": {
                     borderColor: "primary.main",
                     bgcolor: "action.hover",
                     transform: "translateY(-2px)",
-                    boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
                     [`& > .${typographyClasses.root}`]: {
                       color: "text.primary",
                     },
@@ -86,8 +82,7 @@ const Skills = () => {
           </Stack>
         </Stack>
       ))}
-      <Divider sx={{ my: 6 }} />
-    </SectionWrapper>
+    </>
   );
 };
 

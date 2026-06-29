@@ -5,13 +5,13 @@ const Splash = () => {
   return (
     <Stack
       sx={{
-        height: "100vh",
         width: 1,
+        height: "100vh",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <CircularProgress size="3rem" aria-label="Loading…" />
+      <CircularProgress size="3rem" aria-label="Loading..." />
     </Stack>
   );
 };

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import TechnextLogo from "assets/images/technext-logo.webp";
 import Aurora from "assets/images/projects/aurora.webp";
 import Base from "assets/images/projects/base.webp";
@@ -41,6 +41,19 @@ export interface Project {
   technologies: string[];
   href: string;
 }
+
+export const references = {
+  technext: "https://technext.it/",
+  aurora: "https://aurora.themewagon.com/",
+  hummingbird: "https://hbui.dev/",
+  phoenix: "https://themewagon.com/themes/phoenix-tailwind/",
+  falcon: "https://themewagon.com/themes/falcon-tailwind/",
+  dashdarkx: "https://themewagon.github.io/dashdarkX/",
+  dnx: "https://themewagon.github.io/dnx/",
+  venus: "https://themewagon.github.io/venus/",
+  horizon: "https://themewagon.github.io/horizon/",
+  base: "https://themewagon.github.io/base/",
+};
 
 export const SKILLS_DATA: SkillCategory[] = [
   {
@@ -93,7 +106,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     company: {
       logo: TechnextLogo,
       name: "Technext Limited",
-      url: "https://technext.it/",
+      url: references.technext,
     },
     period: "Aug 2024 - Present",
     location: "Dhaka, Bangladesh (Hybrid)",
@@ -109,7 +122,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         Contributed to the development and maintenance of{" "}
         <Typography
           component={Link}
-          href="https://hbui.dev/"
+          href={references.hummingbird}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -129,7 +142,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         Developed and enhanced{" "}
         <Typography
           component={Link}
-          href="https://aurora.themewagon.com/"
+          href={references.aurora}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -150,7 +163,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         Contributed to{" "}
         <Typography
           component={Link}
-          href="https://themewagon.com/themes/phoenix-tailwind/"
+          href={references.phoenix}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -159,7 +172,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         and{" "}
         <Typography
           component={Link}
-          href="https://themewagon.com/themes/falcon-tailwind/"
+          href={references.falcon}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -210,7 +223,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     company: {
       logo: TechnextLogo,
       name: "Technext Limited",
-      url: "https://technext.it/",
+      url: references.technext,
     },
     period: "Apr 2024 - Jul 2024",
     location: "Dhaka, Bangladesh (Hybrid)",
@@ -226,7 +239,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         Developed free admin dashboard templates, including{" "}
         <Typography
           component={Link}
-          href="https://themewagon.github.io/dashdarkX/"
+          href={references.dashdarkx}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -235,7 +248,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         ,{" "}
         <Typography
           component={Link}
-          href="https://themewagon.github.io/dnx/"
+          href={references.dnx}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -244,7 +257,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         ,{" "}
         <Typography
           component={Link}
-          href="https://themewagon.github.io/horizon/"
+          href={references.horizon}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -253,7 +266,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         ,{" "}
         <Typography
           component={Link}
-          href="https://themewagon.github.io/venus/"
+          href={references.venus}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -262,7 +275,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
         ,{" "}
         <Typography
           component={Link}
-          href="https://themewagon.github.io/base/"
+          href={references.base}
           target="_blank"
           sx={{ fontWeight: 600 }}
         >
@@ -314,7 +327,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed dashboards, CRM modules, HRM dashboards, Kanban applications, pricing pages, FAQ pages, and Next.js implementations of application features.",
     technologies: ["React", "Next.js", "TypeScript", "Material UI"],
-    href: "https://aurora.themewagon.com/",
+    href: references.aurora,
   },
   {
     id: 2,
@@ -324,7 +337,7 @@ export const PROJECTS: Project[] = [
     description:
       "Contributed to reusable components, documentation, developer tooling, UI blocks, framework features, and the overall developer experience.",
     technologies: ["Astro", "TypeScript", "Tailwind CSS", "MDX"],
-    href: "https://hbui.dev/",
+    href: references.hummingbird,
   },
   {
     id: 3,
@@ -334,7 +347,7 @@ export const PROJECTS: Project[] = [
     description:
       "Converted the Bootstrap-based Phoenix template to Tailwind CSS, improving maintainability, scalability, and developer experience.",
     technologies: ["Tailwind CSS", "Pug", "Gulp", "JavaScript"],
-    href: "https://themewagon.com/themes/phoenix-tailwind/",
+    href: references.phoenix,
   },
   {
     id: 4,
@@ -344,7 +357,7 @@ export const PROJECTS: Project[] = [
     description:
       "Working on the migration of Falcon from Bootstrap to Tailwind CSS, focusing on automation, consistency, and scalable frontend architecture.",
     technologies: ["Tailwind CSS", "Pug", "Gulp", "JavaScript"],
-    href: "https://themewagon.com/themes/falcon-tailwind/",
+    href: references.falcon,
   },
   {
     id: 5,
@@ -360,7 +373,7 @@ export const PROJECTS: Project[] = [
       "MUI X",
       "Apache ECharts",
     ],
-    href: "https://themewagon.github.io/dashdarkX/",
+    href: references.dashdarkx,
   },
   {
     id: 6,
@@ -376,7 +389,7 @@ export const PROJECTS: Project[] = [
       "MUI X",
       "Apache ECharts",
     ],
-    href: "https://themewagon.github.io/dnx/",
+    href: references.dnx,
   },
   {
     id: 7,
@@ -392,7 +405,7 @@ export const PROJECTS: Project[] = [
       "MUI X",
       "Apache ECharts",
     ],
-    href: "https://themewagon.github.io/horizon/",
+    href: references.horizon,
   },
   {
     id: 8,
@@ -402,7 +415,7 @@ export const PROJECTS: Project[] = [
     description:
       "Created responsive dashboard pages and reusable UI patterns while maintaining accessibility, performance, and code quality standards.",
     technologies: ["React", "TypeScript", "Material UI", "Apache ECharts"],
-    href: "https://themewagon.github.io/venus/",
+    href: references.venus,
   },
   {
     id: 9,
@@ -412,6 +425,6 @@ export const PROJECTS: Project[] = [
     description:
       "Developed reusable dashboard components, application pages, charts, and layouts with a focus on scalability and maintainability.",
     technologies: ["React", "TypeScript", "Material UI", "Apache ECharts"],
-    href: "https://themewagon.github.io/base/",
+    href: references.base,
   },
 ];

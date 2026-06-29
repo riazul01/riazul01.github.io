@@ -1,19 +1,14 @@
-import Divider from "@mui/material/Divider";
-import SectionWrapper from "components/sections/SectionWrapper";
-import ProjectSlider from "components/common/ProjectSlider";
 import ProjectCard from "components/common/ProjectCard";
+import ProjectSlider from "components/common/ProjectSlider";
 import { PROJECTS } from "data/about";
 
 const Projects = () => {
   return (
-    <SectionWrapper>
-      <ProjectSlider
-        title="Latest Work"
-        SliderCard={ProjectCard}
-        data={PROJECTS}
-      />
-      <Divider sx={{ my: 6 }} />
-    </SectionWrapper>
+    <ProjectSlider
+      title="Latest Work"
+      SliderCard={ProjectCard}
+      data={PROJECTS}
+    />
   );
 };
 

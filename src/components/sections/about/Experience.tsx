@@ -3,15 +3,13 @@ import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
 import Chip from "@mui/material/Chip";
 import Typography from "@mui/material/Typography";
-import SectionWrapper from "components/sections/SectionWrapper";
 import Iconify from "components/base/Iconify";
 import Image from "components/base/Image";
 import { EXPERIENCE_DATA } from "data/about";
-import Divider from "@mui/material/Divider";
 
 const Experience = () => {
   return (
-    <SectionWrapper>
+    <>
       <Typography variant="h4" sx={{ mb: 4, letterSpacing: "-0.04em" }}>
         Experience
       </Typography>
@@ -27,7 +25,7 @@ const Experience = () => {
               <Stack
                 spacing={1}
                 sx={{
-                  mt: 0.5,
+                  mt: 0.75,
                   alignItems: "center",
                   color: "text.secondary",
                   position: { md: "sticky" },
@@ -38,8 +36,9 @@ const Experience = () => {
                 <Typography
                   variant="body2"
                   sx={{
-                    letterSpacing: "-0.01em",
                     fontWeight: 600,
+                    letterSpacing: "-0.01em",
+                    textTransform: "uppercase",
                   }}
                 >
                   {exp.period}
@@ -52,7 +51,6 @@ const Experience = () => {
                 variant="h5"
                 sx={{
                   mb: 1,
-                  fontWeight: 700,
                   letterSpacing: "-0.02em",
                 }}
               >
@@ -160,8 +158,7 @@ const Experience = () => {
           </Stack>
         ))}
       </Stack>
-      <Divider sx={{ my: 6 }} />
-    </SectionWrapper>
+    </>
   );
 };
 

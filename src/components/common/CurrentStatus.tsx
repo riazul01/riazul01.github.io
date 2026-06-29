@@ -17,7 +17,7 @@ const CurrentStatus = ({ title, sx }: CurrentStatusProps) => {
           pl: 2.75,
           pr: 1.75,
           mx: "auto",
-          borderRadius: "4rem",
+          borderRadius: 16,
           bgcolor: alpha(theme.palette.primary.main, 0.3),
           border: `1px solid ${alpha(theme.palette.primary.main, 0.3)}`,
           [`& .${badgeClasses.badge}`]: {

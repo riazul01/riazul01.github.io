@@ -1,6 +1,6 @@
-import MainLayout from "layouts/main-layout";
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, Outlet } from "react-router";
+import MainLayout from "layouts/main-layout";
 import Splash from "components/loader/Splash";
 import PageLoader from "components/loader/PageLoader";
 
